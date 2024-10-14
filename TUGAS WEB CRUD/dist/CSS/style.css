@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,url("../../img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+   width: 80%;
+   margin-inline: auto;
+}
+
+.navbar{
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .box-navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .box-navbar .logo h1{
+    color: white;
+    font-size: 24px;
+}
+
+.navbar .box-navbar .menu{
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.navbar .box-navbar .menu li {
+    list-style-type: none;
+}
+
+.navbar .box-navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: #21e432;
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: #21e432;
+    transition: all 0.3s ease;
+}
+
+.menu-bar{
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+  
+.hero{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width: 990px) {
+    .menu-bar{
+        display: block;
+    }
+
+    .navbar .box-navbar .menu{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        row-gap: 20px;
+        justify-content: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+    
